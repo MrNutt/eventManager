@@ -4,7 +4,7 @@ import com.manager.event.converter.EventConverter;
 import com.manager.event.dto.EventRequest;
 import com.manager.event.dto.EventResponse;
 import com.manager.event.repository.EventEntity;
-import com.manager.event.repository.EventRepository;
+import com.manager.event.repository.EventEntityRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import javax.transaction.Transactional;
 @Transactional
 public class EventService {
 
-    private final EventRepository repository;
+    private final EventEntityRepository repository;
     private final EventConverter converter;
 
     public EventResponse getById(Long id) {

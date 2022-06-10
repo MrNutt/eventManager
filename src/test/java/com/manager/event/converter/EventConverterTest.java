@@ -27,14 +27,14 @@ class EventConverterTest {
     }
 
     @Test
-    public void whenConwertEntityToResponse() {
+    public void whenConvertEntityToResponse() {
         EventResponse actualResponse = eventConverter.entityToResponse(EVENT_ENTITY_ONLINE);
         assertEquals(EVENT_RESPONSE_ONLINE, actualResponse);
         System.out.println();
     }
 
     @Test
-    public void whenConwertRequestToEntity() {
+    public void whenConvertRequestToEntity() {
         EventEntity actualEntity = eventConverter.requestToEntity(EVENT_REQUEST_OFFLINE);
         assertEquals(EVENT_ENTITY_OFFLINE, actualEntity);
     }

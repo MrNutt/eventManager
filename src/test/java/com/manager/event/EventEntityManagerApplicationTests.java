@@ -2,9 +2,11 @@ package com.manager.event;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-class EventManagerApplicationTests {
+@ActiveProfiles("test")
+class EventEntityManagerApplicationTests {
 
 	@Test
 	void contextLoads() {
